@@ -18,11 +18,9 @@
         config.animateOut="fadeOut";
         config.animateIn="fadeIn";    
       }
-
       if($(this).hasClass('dotsData')){
         config.dotsData="true";
       }
-      
       $(this).owlCarousel(config);
     });
 
