@@ -19,7 +19,11 @@
 @import url(../vendor/bootstrap/bootstrap.min.css);
 @import url(../vendor/owl.carousel/owl.carousel.min.css);
 @import url(../vendor/font-awesome/font-awesome.min.css);
-
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/arial/Arial.eot');
+  src: local('Arial'), url('../fonts/arial/Arial.woff') format('woff'), url('../fonts/arial/Arial.ttf') format('truetype');
+}
 /*===== Layout Style =====*/
 * {
   margin: 0;
@@ -33,7 +37,7 @@ body {
   word-break: break-word;
   margin: 0;
   color: #333;
-  font: 14px/18px Helvetica,Tahoma,sans-serif;
+  font: 14px/18px Arial, Helvetica, sans-serif;
   line-height: 1.5;
   outline: none;
 }
@@ -329,6 +333,41 @@ img {
   background: #fff;
   padding: 0 10px 10px 10px;
 }
+.block-products .block-title .title {
+  float: left;
+  overflow: hidden;
+  line-height: 50px;
+  font-size: 20px;
+  color: #333;
+  padding: 0;
+  padding-right: 40px;
+  position: relative;
+}
+.block-products .block-title .title img {
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+.block-products .block-title .viewmore {
+  float: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 5px 0 0;
+  line-height: 59px;
+  color: #8f0408;
+  position: relative;
+  font-weight: 600;
+}
+.block-products .block-content {
+  clear: both;
+}
+.block-products .pro-thumb {
+  /*width: 140px;
+  height: 140px;
+  margin: 0 auto;*/
+  margin-bottom: 30px;
+}
 .block-products .pro-info {
   text-align: center;
 }
@@ -348,12 +387,6 @@ img {
 .block-products .pro-info .pro-sale {
   font-size: 14px;
   color: #8a8a8a;
-}
-.block-products .block-title .title {
-  font-size: 20px;
-  color: #333333;
-  line-height: 50px;
-  margin: 0;
 }
 .block-products .owl-prev, .block-products .owl-next {
   opacity: 1;
@@ -394,4 +427,34 @@ img {
   -o-transition: all 0.45s ease;
   -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
+}
+
+/*===== Footer =====*/
+.footer .footer-top {
+  background: #183544;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer .footer-top .ft-collapse {
+  cursor: pointer;
+}
+.footer .footer-top .ft-collapse i {
+  margin-left: 10px;
+}
+.urlweb {
+  color: #fff;
+}
+.footer-main {
+  background: #0c2431;
+}
+.footer-bot {
+  background: #eb2227;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.footer-bot p {
+  color: #fff;
+  font-size: 14px;
 }
