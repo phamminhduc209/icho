@@ -428,6 +428,26 @@ img {
   transition: all 0.45s ease;
 }
 
+/*===== breadcrumb =====*/
+.block-breadcrumb .breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.block-breadcrumb .breadcrumb li, .block-breadcrumb .breadcrumb a {
+  color: #000000;
+}
+.block-breadcrumb .breadcrumb > li + li:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #000000;
+}
+.block-breadcrumb .breadcrumb li.active , .block-breadcrumb .breadcrumb .active a {
+  color: #eb2227;
+}
+
 /*===== Footer =====*/
 .footer .block-ft {
   background: #183544;
