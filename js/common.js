@@ -40,4 +40,11 @@
     }, 'slow');
   });
 
+  // Accordion has icon arrow
+  $(document).on('click','.box-accordion > .accordion-header',function(event){
+    $(this).toggleClass('active');
+    $(this).toggleClass('opened');
+    $('.box-collapse').slideToggle(200);
+  });
+
 })(jQuery); // End of use strict

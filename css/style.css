@@ -44,7 +44,6 @@ body {
 a { color: #252525; cursor: pointer; }
 a:hover,
 a:focus {
-  color: #707070;
   text-decoration: none;
   transition: all 0.25s;
 }
@@ -430,31 +429,73 @@ img {
 }
 
 /*===== Footer =====*/
-.footer .footer-top {
+.footer .block-ft {
   background: #183544;
   color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.footer .footer-top .ft-collapse {
-  cursor: pointer;
-}
-.footer .footer-top .ft-collapse i {
-  margin-left: 10px;
-}
 .urlweb {
   color: #fff;
 }
-.footer-main {
+.block-ftm {
   background: #0c2431;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.footer-bot {
+.block-ftm img {
+  margin-bottom: 10px;
+}
+.block-ftm .registered-bct {
+  color: #687076;
+}
+.block-ftm .menu-ft {
+  text-align: right;
+}
+.block-ftm .menu-ft li {
+  margin-bottom: 8px;
+}
+.block-ftm .menu-ft li:last-child {
+  margin-bottom: 0;
+}
+.block-ftm .menu-ft li a {
+  color: #687076;
+  font-size: 14px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.block-ftm .menu-ft li a:hover {
+  padding-right: 8px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #c5c5c5;
+}
+.block-ftb {
   background: #eb2227;
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
 }
-.footer-bot p {
+.block-ftb p {
   color: #fff;
   font-size: 14px;
+}
+.accordion-header {
+  position: relative;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 20px;
+}
+.accordion-header .btn-opened:before {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  color: #fff;
+}
+.accordion-header.opened .btn-opened:before {
+  content: "\f106";
 }
