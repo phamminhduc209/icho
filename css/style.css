@@ -428,7 +428,62 @@ img {
   transition: all 0.45s ease;
 }
 
-/*===== breadcrumb =====*/
+.main-left,
+.main-right {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 20px 15px;
+}
+.main-left .block-page-name {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.main-right .block-cate .block-cate-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/*===== Contact =====*/
+.main-contact ol li {
+  list-style-image: url(../images/li.jpg);
+  margin-left: 15px;
+  margin-bottom: 7px;
+  line-height: 1.4;
+}
+.main-contact ol>li>a {
+  color: #ff0101;
+}
+.main-contact>b {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 7px;
+  font-weight: normal;
+}
+#frmContact .form-group {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#frmContact label {
+  width: 20%;
+  float: left;
+  vertical-align: middle;
+  font-weight: normal;
+  background: url(../images/li.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+}
+#frmContact input { width: 300px !important; }
+#frmContact input, #frmContact textarea {
+  width: 80%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+
+/*===== Breadcrumb =====*/
 .block-breadcrumb .breadcrumb {
   background: none;
   padding: 0;
