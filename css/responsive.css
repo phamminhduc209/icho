@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. 	
+2. 	
+-------------------------------------------------------------------*/
+/*----------------
+[Styles for devices(<1200px)]
+*/
+@media (min-width: 1200px) {
+	.cart-page .cart-col-1 {
+		width: 885px;
+	}
+	.cart-page .cart-col-1 .col-lg-9 {
+		width: 510px;
+	}
+	.cart-page .cart-col-1 .col-lg-6 {
+		width: 360px;
+	}
+	.cart-page .cart-col-1 .col-lg-3 {
+		width: 150px;
+	}
+	.cart-page .cart-col-2 {
+	  width: 285px;
+	  padding-left: 0;
+	  float: right;
+	}
+	.cart-page .cart-col-1 .col-lg-1 {
+		width: 115px;
+	}
+	.cart-page .cart-col-1>.row.last>div, .cart-page .cart-col-1>form>.row.last>div {
+	  padding-right: 0;
+	}
+	.cart-page .cart-col-2 #right-affix.affix-bottom, .cart-page .cart-col-2 #right-affix.affix-top {
+	  position: relative;
+	  width: 270px;
+	}
+	.cart-page .fee {
+	  margin-top: 15px;
+	}
+}
+@media (min-width: 992px) {
+	.cart-page .cart-col-1 .col-md-1 {
+		width: 115px;
+	}
+	.cart-page .cart-col-1 .col-md-6.c2 {
+	  width: 323px;
+	}
+	.cart-page .name {
+	  margin-bottom: 15px;
+	}
+}
