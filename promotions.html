@@ -227,5 +227,15 @@
 	<script src="vendor/countdown/jquery.countdown.min.js"></script>
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
+	<script>
+		/** COUNT DOWN **/
+		$('[data-countdown]').each(function() {
+			var $this = $(this), finalDate = $(this).data('countdown');
+			$this.countdown(finalDate, function(event) {
+				var fomat ='Còn <span>%D</span> ngày <span>%H</span> giờ <span>%M</span> phút <span>%S</span> giây';
+				$this.html(event.strftime(fomat));
+			});
+		});
+	</script>
 </body>
 </html>

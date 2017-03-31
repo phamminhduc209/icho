@@ -46,13 +46,4 @@
     $('.box-collapse').slideToggle(200);
   });
 
-  /** COUNT DOWN **/
-  $('[data-countdown]').each(function() {
-    var $this = $(this), finalDate = $(this).data('countdown');
-    $this.countdown(finalDate, function(event) {
-    var fomat ='Còn <span>%D</span> ngày <span>%H</span> giờ <span>%M</span> phút <span>%S</span> giây';
-    $this.html(event.strftime(fomat));
-    });
-  });
-
 })(jQuery); // End of use strict
