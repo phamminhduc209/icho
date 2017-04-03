@@ -46,4 +46,25 @@
     $('.box-collapse').slideToggle(200);
   });
 
+  /*  [ Main Menu ]
+  - - - - - - - - - - - - - - - - - - - - */
+  $(".navbar-toggle").on( 'click', function() {
+    $( this ).toggleClass('has-open');
+    $("header .menu").toggleClass("has-open");
+    $("body").toggleClass("menu-open");
+  });
+
+  $("[data-action='toggle-head']").on( 'click', function() {
+    $( this ).toggleClass('has-open');
+    $(".header-content").toggleClass("has-open");
+  });
+
+  /** Menu, Menu Mega Responsive **/
+  $(document).ready(function(){
+    $('.menu ul li.parent').append('<span class="carret-down"></span>');
+    $('.menu ul li.parent .carret-down').click(function(){
+      $(this).toggleClass('open').siblings('.submenu').slideToggle();
+    });
+  });
+
 })(jQuery); // End of use strict

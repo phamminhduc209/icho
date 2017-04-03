@@ -265,44 +265,38 @@ img {
 }
 
 /*===== Menu Top =====*/
+.logo-menu-res { display: none; }
+.submenu .container { background: #fff; }
+.submenu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+.sub-submenu .submenu-item { text-align: center; }
+.submenu::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
+}
+.submenu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #545454;
+}
 .navbar-custom {
   background: #183544;
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-}
-#mainNav {
-  background: #183544;
-  padding: 0;
-}
-#mainNav .navbar {
-  border: none;
-  margin: 0;
-  background: none;
   min-height: 38px;
 }
-#mainNav .container {
-  padding: 0;
+#header .menu {
+  position: relative;
 }
-#mainNav .navbar-collapse {
-  padding: 0;
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
 }
-#mainNav .nav, #mainNav .collapse, #mainNav .dropup, #mainNav .dropdown {
-  position: static;
-}
-#mainNav .navbar .navbar-nav>li:hover>a, #mainNav .navbar .navbar-nav>li.active>a {
-  background: transparent;
-  color: #ffc2c4;
-  -webkit-transition: all 0.45s ease;
-  -o-transition: all 0.45s ease;
-  -ms-transition: all 0.45s ease;
-  transition: all 0.45s ease;
-}
-#mainNav .navbar .navbar-nav>li:hover>a span.carret-down, #mainNav .navbar .navbar-nav>li.active>a span.carret-down {
-  color: #ffc2c4;
-}
-
-#mainNav .navbar .navbar-nav>li>a {
+.menu .navbar-nav>li>a {
   display: block;
   margin-top: 3px;
   padding: 9px 0;
@@ -311,7 +305,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   overflow: hidden;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0;
   white-space: nowrap;
   position: relative;
   text-transform: uppercase;
@@ -320,26 +314,30 @@ img {
   -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-#mainNav .navbar .navbar-nav>li:last-child>a { margin-right: 0; }
-#mainNav .navbar .navbar-nav>li>a .carret-down:before {
+.navbar.navbar-custom .navbar-nav>li:hover>a,
+.navbar.navbar-custom .navbar-nav>li.active>a {
+  background: transparent;
+  color: #ffb6b8;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -ms-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+.navbar.navbar-custom .navbar-nav>li.parent .carret-down {
+  position: absolute;
+  color: #fff;
+  right: 15px;
+  top: 10px;
+}
+.navbar.navbar-custom .navbar-nav>li.parent .carret-down:before {
   content: "\f0d7";
   font-family: "Fontawesome";
-  font-size: 12px;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-  margin-left: 8px;
 }
-#mainNav .navbar .navbar-nav>li:hover .submenu  {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.navbar.navbar-custom .navbar-nav>li:hover .carret-down:before,
+.navbar.navbar-custom .navbar-nav>li.active .carret-down:before {
+  color: #ffb6b8;
 }
-.submenu {
+.menu .navbar-nav .submenu {
   display: block;
   position: absolute;
   top: 200%;
@@ -358,42 +356,21 @@ img {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.submenu .container { background: #fff; }
-.submenu .sub-submenu {
-  padding: 10px 0;
-  width: 100%;
-  float: left;
+.menu .navbar-nav li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-.submenu .submenu-item {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 10px 0;
+.navbar-default .navbar-toggle {
+  background-color: transparent !important;
+  border: none !important;
 }
-.submenu .submenu-item:hover a {
-  color: #eb2227;
-  -webkit-transition: all 0.45s ease;
-  -o-transition: all 0.45s ease;
-  -ms-transition: all 0.45s ease;
-  transition: all 0.45s ease;
-}
-.submenu::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px;
-  background-color: #F5F5F5;
-}
-
-.submenu::-webkit-scrollbar
-{
-  width: 4px;
-  background-color: #000;
-}
-
-.submenu::-webkit-scrollbar-thumb
-{
-  border-radius: 50px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #D62929;
+.navbar-default .navbar-toggle i {
+  color: #fff;
+  font-size: 30px;
 }
 
 /*===== Block =====*/
@@ -1349,6 +1326,7 @@ img {
   color: #fff;
   font-size: 14px;
 }
+.block-phone-ft p { text-align: center; }
 .accordion-header {
   position: relative;
   cursor: pointer;
