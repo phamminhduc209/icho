@@ -621,14 +621,48 @@ img {
 /*===== Sale Products =====*/
 .block-sale-products { margin-bottom: 0; }
 .block-sale-products:last-child { margin-bottom: 35px; }
-.block-sale-products li { margin-bottom: 10px; }
+.block-sale-products .products li { margin-bottom: 10px; }
 
 /*===== Products Cate =====*/
 
 /*===== Block Pagination =====*/
 .block-pagination { text-align: center; }
-.block-pagination {
-  margin-bottom: 0;
+.block-pagination .pagination { margin-bottom: 0; }
+.block-pagination .pagination>li>a,
+.block-pagination .pagination>li>a,
+.block-pagination .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #000000;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #f00;
+  margin: 0 15px;
+  border-radius: 4px;
+}
+.block-pagination .pagination>.active>a,
+.block-pagination .pagination>.active>a:focus,
+.block-pagination .pagination>.active>a:hover,
+.block-pagination .pagination>.active>span,
+.block-pagination .pagination>.active>span:focus,
+.block-pagination .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.block-pagination .pagination>li>a:focus,
+.block-pagination .pagination>li>a:hover,
+.block-pagination .pagination>li>span:focus,
+.block-pagination .pagination>li>span:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #f00;
+    border-color: #f00;
 }
 
 /*===== News Cate =====*/
@@ -717,7 +751,8 @@ img {
   margin-right: 0;
   margin-left: 0;
 }
-.cart-page .cart-col-1>.row.title {
+.cart-page .cart-col-1>.row.title,
+.cart-page .cart-col-1>form>.row.title {
   padding-bottom: 10px;
   padding-top: 10px;
   border-top: none;
@@ -807,12 +842,6 @@ img {
 }
 .cart-page .cart-col-1>.row:last-child, .cart-page .cart-col-1>form>.row:last-child {
   border-bottom: none;
-}
-.cart-page .cart-col-1>.row, .cart-page .cart-col-1>form>.row {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #e1e1e1;
-  margin: 0;
 }
 .cart-page .fee {
   font-size: 12px;
@@ -1085,6 +1114,47 @@ img {
   display: block;
 }
 .block-productrelate .products .pro-info a.compare:hover { color: #ce0606; }
+
+/*===== Block Right =====*/
+.block-cate ul li a {
+  line-height: 36px;
+  color: #eb2227;
+}
+.block-cate ul li {
+  position: relative;;
+}
+.block-cate ul li.active,
+.block-cate ul li:hover {
+  background: #eb2227;
+}
+.block-cate ul li.active a,
+.block-cate ul li:hover a {
+  color: #fff;
+}
+.block-cate ul li.active:before,
+.block-cate ul li:hover:before {
+  content: "";
+  background: url("../images/carret-left.png");
+  position: absolute;
+  top: 0;
+  left: -31px;
+  width: 31px;
+  height: 36px;
+}
+.block-cate ul li.active:after,
+.block-cate ul li:hover:after {
+  content: "";
+  background: #eb2227;
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 15px;
+  height: 36px;
+  z-index: 99;
+}
+.page-pl0 {
+  padding-right: 0;
+}
 
 /*===== Panel =====*/
 .block-panel-products {
