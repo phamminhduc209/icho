@@ -278,6 +278,22 @@
 	.block-ft .block-accordion-ft .accordion-header {
     	text-align: left;
 	}
+	.block-promotions .promotions-item { width: 100%; }
+	.block-promotions .promotions-item .item-sales {
+		position: relative;
+		margin-bottom: 15px;
+	}
+	.block-promotions .promotions-item .item-sales .count-down-time {
+		position: relative;
+	}
+}
+/*----------------
+[Styles for devices(<480px)]
+*/
+@media (max-width: 480px) {
+	.block-sale-products li {
+		width: 100%;
+	}
 }
 /*----------------
 [Styles for devices(<375px)]

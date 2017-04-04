@@ -587,13 +587,13 @@ img {
 }
 
 /*===== Promotions =====*/
-.item-sales { 
+.block-promotions .promotions-item .item-sales { 
   position: relative;
   margin-bottom: 50px;
 }
-.item-sales img { width: 100%; }
-.count-down-time {
-  background: #000000;
+.block-promotions .promotions-item .item-sales img { width: 100%; }
+.block-promotions .promotions-item .item-sales .count-down-time {
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   font-weight: bold;
   padding: 10px;
@@ -621,8 +621,15 @@ img {
 /*===== Sale Products =====*/
 .block-sale-products { margin-bottom: 0; }
 .block-sale-products:last-child { margin-bottom: 35px; }
+.block-sale-products li { margin-bottom: 10px; }
 
 /*===== Products Cate =====*/
+
+/*===== Block Pagination =====*/
+.block-pagination { text-align: center; }
+.block-pagination {
+  margin-bottom: 0;
+}
 
 /*===== News Cate =====*/
 .news-items .news-item:nth-child(4n+1) {
