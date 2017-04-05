@@ -39,6 +39,9 @@
     }, 'slow');
   });
 
+  /*  [ Sticky Menu ] */
+  $('.fixed-header').sticky({ topSpacing: 0 });
+
   // Accordion has icon arrow
   $(document).on('click','.box-accordion > .accordion-header',function(event){
     $(this).toggleClass('active');
