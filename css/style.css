@@ -408,9 +408,9 @@ img {
   left: 100%;
   top: 0;
 }
-.menu .navbar-nav .submenu li:last-child a {
+/*.menu .navbar-nav .submenu li:last-child a {
   border-bottom: none;
-}
+}*/
 .navbar-default .navbar-toggle {
   background-color: transparent !important;
   border: none !important;
@@ -418,6 +418,23 @@ img {
 .navbar-default .navbar-toggle i {
   color: #fff;
   font-size: 30px;
+}
+.navbar.navbar-custom .navbar-nav>li.parent > .carret-down {
+  position: absolute;
+  color: #fff;
+  right: 15px;
+  top: 10px;
+}
+.navbar.navbar-custom .navbar-nav>li:hover > .carret-down:before,
+.navbar.navbar-custom .navbar-nav>li.active > .carret-down:before {
+  color: #ffb6b8;
+}
+.navbar.navbar-custom .navbar-nav>li.parent > .carret-down:before {
+  content: "\f0d7";
+  font-family: "Fontawesome";
+}
+.menu li.parent .plus.open:before {
+  content: "\f074";
 }
 
 /*===== Block =====*/
