@@ -12,6 +12,7 @@
   /*===== Header =====*/
   /*===== Menu Top =====*/
   /*===== Block =====*/
+  /*===== Block Slider =====*/
   /*===== Block Products =====*/
   /*===== Page Common =====*/
   /*===== Contact =====*/
@@ -443,6 +444,77 @@ img {
   position: relative;
 }
 
+/*===== Block Slider =====*/
+.block-slider {
+  position: relative;
+}
+.block-slider .owl-nav .owl-prev,
+.block-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.block-slider .owl-nav .owl-prev { left: 50%; }
+.block-slider .owl-nav .owl-next { right: 50%; }
+.block-slider .owl-nav .owl-prev,
+.block-slider .owl-nav .owl-next {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.block-slider:hover .owl-prev,
+.block-slider:hover .owl-next {
+  opacity: 1;
+  overflow: visible;
+}
+.block-slider:hover .owl-prev {
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.block-slider:hover .owl-next {
+  right: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.block-slider .owl-nav .owl-prev i,
+.block-slider .owl-nav .owl-next i {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.block-slider .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.block-slider .owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 0;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.block-slider .owl-dots .owl-dot.active {
+  background-color: #eb2227;
+  border: 1px solid #eb2227;
+}
+
 /*===== Block Products =====*/
 .block-products {
   border: 1px solid #e1e1e1;
@@ -497,6 +569,8 @@ img {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 10px;
+  height: 36px;
+  overflow: hidden;
 }
 .products .price-products {
   height: 50px;

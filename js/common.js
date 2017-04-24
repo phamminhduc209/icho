@@ -13,7 +13,7 @@
       var config = $(this).data();
       config.navText = ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'];
       config.smartSpeed="800";
-     
+      
       if($(this).hasClass('owl-style2')){
         config.animateOut="fadeOut";
         config.animateIn="fadeIn";    
