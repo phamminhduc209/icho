@@ -75,6 +75,16 @@ a:focus {
 }
 p { margin: 0; }
 select:focus, button:focus, input:focus { outline: none; }
+.btn.focus, .btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline: none;
+}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1180,7 +1190,7 @@ img {
   list-style-type: decimal;
 }
 .dt-buynow {
-  padding: 10px 0;
+  padding: 10px 0 20px;
   position: relative;
   text-align: center;
 }
@@ -1200,30 +1210,24 @@ img {
   user-select: none;
 }
 .buy {
-  display: inline-block;
-  vertical-align: bottom;
-  overflow: hidden;
-  padding: 7px 0;
-  width: 240px;
-  margin: 0 0 0 9px;
+  width: 100%;
+  background-color: #eb2227;
+  border-color: #eb2227;
+  border-radius: 25px;
   font-size: 16px;
   color: #fff;
-  text-align: center;
   text-transform: uppercase;
-  border-radius: 5px;
-  border: none;
-  background: #ed1c24;
-  background: -webkit-linear-gradient(#ff6067,#ed1c24);
-  background: -o-linear-gradient(#ff6067,#ed1c24);
-  background: -moz-linear-gradient(#ff6067,#ed1c24);
-  background: linear-gradient(#ff6067,#ed1c24);
+  font-weight: 600;
+  height: 39px;
+  padding: 0 35px;
+  font-family: "Oswald";
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .dt-buynow .buy:hover {
-  background: #ed1c24;
-  background: -webkit-linear-gradient(#f74f55,#ed1c24);
-  background: -o-linear-gradient(#f74f55,#ed1c24);
-  background: -moz-linear-gradient(#f74f55,#ed1c24);
-  background: linear-gradient(#f74f55,#ed1c24)
+  background-color: #ff3e42;
+  border-color: #ff3e42;  
   color: #fff;
 }
 .dt-buynow label span.down {
@@ -1313,6 +1317,7 @@ img {
 /*===== Panel =====*/
 .block-panel-products {
   border-color: #cbcbcb;
+  margin-bottom: 10px;
 }
 .block-panel-products>.panel-heading {
   color: #333;
