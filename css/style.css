@@ -1172,6 +1172,13 @@ img {
   color: #3f3f3f;
   line-height: 23px;
 }
+.block-delivery ul {
+  padding-left: 15px;
+  text-align: justify;
+}
+.block-delivery ul li {
+  list-style-type: decimal;
+}
 .dt-buynow {
   padding: 10px 0;
   position: relative;
@@ -1204,11 +1211,20 @@ img {
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
+  border: none;
   background: #ed1c24;
-  background: -webkit-linear-gradient(#ed1c24,#ed1c24);
-  background: -o-linear-gradient(#ed1c24,#ed1c24);
-  background: -moz-linear-gradient(#ed1c24,#ed1c24);
-  background: linear-gradient(#ed1c24,#ed1c24);
+  background: -webkit-linear-gradient(#ff6067,#ed1c24);
+  background: -o-linear-gradient(#ff6067,#ed1c24);
+  background: -moz-linear-gradient(#ff6067,#ed1c24);
+  background: linear-gradient(#ff6067,#ed1c24);
+}
+.dt-buynow .buy:hover {
+  background: #ed1c24;
+  background: -webkit-linear-gradient(#f74f55,#ed1c24);
+  background: -o-linear-gradient(#f74f55,#ed1c24);
+  background: -moz-linear-gradient(#f74f55,#ed1c24);
+  background: linear-gradient(#f74f55,#ed1c24)
+  color: #fff;
 }
 .dt-buynow label span.down {
   border-top-left-radius: 4px;
