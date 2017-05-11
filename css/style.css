@@ -260,22 +260,25 @@ img {
 }
 .top-header .logo {
   float: left;
-  width: 28%;
+  width: 33.3%;
   margin: 7px 0;
 }
 .top-header .header-search-box {
   float: left;
-  width: 18%;
+  width: 33.3%;
   height: 35px;
   margin: 9px 0 0;
   position: relative;
 }
 .top-header .header-contact {
-  float: right;
+  float: left;
   line-height: 45px;
+  width: 33.3%;
+  text-align: right;
 }
 .header-search-box .mainsearch {
   position: relative;
+  width: 240px;
 }
 .header-search-box input {
   height: 27px;
@@ -429,6 +432,17 @@ img {
 .navbar-default .navbar-toggle i {
   color: #fff;
   font-size: 30px;
+}
+.navbar-toggle.has-open:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 777;
 }
 .navbar.navbar-custom .navbar-nav>li.parent > .carret-down {
   position: absolute;
