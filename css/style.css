@@ -265,9 +265,9 @@ img {
 }
 .top-header .header-search-box {
   float: left;
-  width: 33%;
+  width: 18%;
   height: 35px;
-  margin: 5px 0;
+  margin: 9px 0 0;
   position: relative;
 }
 .top-header .header-contact {
@@ -278,20 +278,20 @@ img {
   position: relative;
 }
 .header-search-box input {
-  height: 35px;
+  height: 27px;
   background: #fff;
   color: #7c7c7c;
   border-radius: 20px;
   font-style: italic;
-  padding: 5px 35px 5px 20px;
+  padding: 5px 30px 5px 15px;
   line-height: 35px;
 }
 .header-search-box button {
   color: #252525;
   font-size: 15px;
   position: absolute;
-  top: 7px;
-  right: 14px;
+  top: 2px;
+  right: 10px;
   background: transparent;
   border: none;
 }
