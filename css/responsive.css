@@ -172,6 +172,9 @@
 	.menu li.parent .carret-down.open:before {
 	  content: "\f0d8";
 	}
+	.block-add {
+		display: block;
+	}
 }
 /*----------------
 [Styles for devices(>992px)]
